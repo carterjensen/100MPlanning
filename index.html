@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUB Product & Experience — Org Evolution</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="auth-gate" id="auth-gate">
+  <form class="auth-card" id="auth-form" autocomplete="off">
+    <h1>Product &amp; Experience</h1>
+    <div class="auth-sub">Org Plan · $20M → $100M</div>
+    <input type="password" id="auth-input" placeholder="Password" autocomplete="off" spellcheck="false">
+    <button type="submit">Unlock</button>
+    <div class="auth-error" id="auth-error"></div>
+  </form>
+</div>
+
+<div id="app" hidden>
+  <div class="nav" id="nav">
+    <div class="nav-tab active" data-view="evolution">Org Evolution</div>
+    <div class="nav-tab" data-view="overview">Mission &amp; Context</div>
+    <div class="nav-tab" data-view="abby">Abby's Role</div>
+    <div class="nav-tab" data-view="priorities">Next 90 Days</div>
+    <div class="nav-tab" data-view="cost">Cost Model</div>
+  </div>
+
+  <div class="header">
+    <h1>Product &amp; Experience <em>Org Evolution</em></h1>
+    <div class="header-sub">Two departments that grow into four. Coaches under Curriculum always. Departments split when revenue demands it.</div>
+  </div>
+
+  <div id="view-evolution" class="view active"></div>
+  <div id="view-overview" class="view"></div>
+  <div id="view-abby" class="view"></div>
+  <div id="view-priorities" class="view"></div>
+  <div id="view-cost" class="view"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
